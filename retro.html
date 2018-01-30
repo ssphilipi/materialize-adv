@@ -13,6 +13,7 @@
 
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body>
@@ -25,12 +26,20 @@
             <li><a href="eventos.html">eventos</a></li>
             <li><a href="contato.html">contato</a></li>
           </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="flea-market.html">flea market</a></li>
+            <li><a href="eventos.html">eventos</a></li>
+            <li><a href="contato.html">contato</a></li>
+          </ul>
+        </div>
         </div>
       </nav>
       <section>
         <div class="row white" id="bloco-1">
           <div class="container">
-            <div class="col l4 m6 s12">
+            <div class="col l4 m4 s12">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, diam vel eleifend scelerisque, lectus tellus fringilla tellus,
                 nec dapibus leo ex rutrum magna.
@@ -43,7 +52,7 @@
                 Nullam commodo velit vel eros porttitor pulvinar. Sed nec placerat arcu. Sed quis gravida arcu.
               </p>
             </div>
-            <div class="col l4 m6 s12">
+            <div class="col l4 m4 s12">
               <p>
                 Morbi nisi erat, aliquet ac purus vel, vulputate elementum sapien. Etiam eget urna quis est lacinia rutrum.
                 In erat felis, porttitor dignissim turpis rutrum, accumsan egestas purus. Nunc quam mauris, cursus quis libero
@@ -56,7 +65,7 @@
 
              </p>
             </div>
-            <div class="col l4 m6 s12">
+            <div class="col l4 m4 s12">
               <p>
                   Donec commodo arcu mauris, quis feugiat tellus pulvinar ut.
                   Aliquam nisl est, euismod in convallis eget, laoreet vitae metus. Nunc ac consequat ligula, ut mattis ligula.
@@ -94,10 +103,20 @@
       </footer>
 
       <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
     </body>
+
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
+
 </html>

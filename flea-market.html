@@ -12,6 +12,7 @@
 
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body>
@@ -23,7 +24,13 @@
             <li><a href="flea-market.html">flea market</a></li>
             <li><a href="">eventos</a></li>
             <li><a href="contato.html">contato</a></li>
-
+          </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="flea-market.html">flea market</a></li>
+            <li><a href="eventos.html">eventos</a></li>
+            <li><a href="contato.html">contato</a></li>
           </ul>
         </div>
       </nav>
@@ -52,7 +59,7 @@
 
                  </div>
               </div>
-              <div class="col l4 m6 s12">
+              <div class="col l4 m6 s12 offset-m3">
                   <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="img/cards/flea-market.jpg">
@@ -64,7 +71,7 @@
                </div>
             </div>
             <div class="row">
-              <div class="col l4 m6 s12">
+              <div class="col l4 m6 s12 offset-l2">
                   <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="img/cards/antique.jpg">
@@ -109,11 +116,18 @@
       </footer>
 
       <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     </body>
+
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
 
 </html>
